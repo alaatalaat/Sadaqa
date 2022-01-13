@@ -1,0 +1,28 @@
+#sectionOne{
+    .row{
+        div{
+            .form-control {
+                display: inline;
+                width: 50%;
+            }
+            *{
+                outline:none;box-shadow:none;
+            }
+        }
+        ul{
+            span{
+                color: crimson !important;
+            }
+            li:nth-child(even){
+                list-style-type:' ❤️ ';
+                list-style-position: inside;
+            }
+            li:nth-child(odd){
+                list-style-type:' 💚 ';
+                list-style-position: inside;
+            }
+            margin-top: 20px;font-size:18px;line-height:30px;
+        }
+    }
+    
+}

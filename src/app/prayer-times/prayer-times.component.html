@@ -1,0 +1,16 @@
+<div class="container-fluid py-5" id="sectionOne">
+    <div class="text-center">
+        <h1> مواعيد الأذان واوقات الصلاة في الوطن العربي </h1>
+    </div>
+    <div class="container mt-3">
+        <div class="row">
+            <a [routerLink]="['/prayer-times',flag.id]" class="col-sm-4 col-md-2 mt-3" *ngFor="let flag of Flags">
+                <div class="rounded" [ngStyle]="{'background-image': 'url(' + flag.img + ')'}">
+                   <span class="w-100 text-center">
+                       مواقيت الصلاة في {{flag.text}}
+                   </span>
+                </div>
+            </a>
+        </div>
+    </div>
+</div>

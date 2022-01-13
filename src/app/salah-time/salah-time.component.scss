@@ -1,0 +1,14 @@
+.container-fluid{
+    b{
+        color:#FFD347;font-size:24px;
+    }
+    background: #030726;height:100vh;
+    tbody{
+        tr:nth-child(1){ background:#e63946; }
+        tr:nth-child(2){ background: #023047;}
+        tr:nth-child(3){ background: #582f0e; }
+        tr:nth-child(4){ background: #ff5400; }
+        tr:nth-child(5){ background: #000; }
+        tr:nth-child(6){ background: #370617; }
+    }
+}

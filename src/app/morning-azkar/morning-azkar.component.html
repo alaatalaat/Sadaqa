@@ -1,0 +1,22 @@
+<div class="text-center my-5">
+    <p>أذكار الصباح <img src="../../assets/sun.png" width="50px" height="50px"></p>
+</div>
+<div class="container-fluid" id="sectionOne">
+    <div class="row mx-2 mx-md-5 my-5 py-3 py-md-0 rounded" *ngFor="let zekr of allAzkar?.content ;let i = index">
+        <div class="col-sm-12 col-md-4">
+            <div>
+                <span>{{zekr?.count}}</span>
+                <button id="reset" (click)="reset(i)"></button>
+                <button id="count" (click)="conter(i)"></button>
+            </div>
+        </div>
+        <div class="col-sm-12 col-md-8">
+            <p> {{ zekr.zekr  }} </p>
+            <p> {{ zekr.bless}}</p>
+            <span>عدد مرات التكرار : {{ zekr.repeat }} مرة </span>
+       
+      
+        </div>
+    </div>
+</div>
+

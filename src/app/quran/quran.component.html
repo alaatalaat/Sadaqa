@@ -1,0 +1,54 @@
+<div class="container-fluid py-5" id="sectionOne">
+    <div class="text-center">
+        <img src="../../assets/quran.png" width="100px" height="100px">
+    </div>
+    <div class="row my-3">
+        <div class="col-sm-12 col-md-8 mx-auto text-center">
+            <b> كتاب أنزلناه إليك مبارك ليدبروا آياته وليتذكر أولوا الألباب </b>
+            <p class="mb-0 text-white mt-2">
+                عن أبي أمامة الباهلي رضي الله عنه قال : سمعت <span>رسول الله صلى الله عليه وسلم</span> يقول : اقرءوا القرآن فإنه يأتي يوم القيامة شفيعا لأصحابه , اقرءوا الزهراوين البقرة وسورة آل عمران فإنهما تأتيان يوم القيامة كأنهما غمامتان أو كأنهما غيايتان أو كأنهما فرقان من طير صواف تحاجان عن أصحابهما اقرءوا سورة البقرة فإن أخذها بركة وتركها حسرة ولا تستطيعها البطلة
+            </p>
+            <p class="text-white">رواه مسلم</p>
+        </div>
+    </div>
+</div>
+
+<div class="container">
+    <div class="row my-5">
+        <div class="col-sm-12 mx-auto">
+            <b>قم باختيار السورة من فهرس القرآن الكريم</b>
+            <table class="table table-striped mt-3">
+                <thead>
+                  <tr>
+                    <th scope="col">م</th>
+                    <th scope="col">اسم السورة</th>
+                    <th scope="col">نوعها</th>
+                    <th scope="col">عدد أياتها</th>
+                    <th scope="col">الصفحة</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr *ngFor="let fahras of allFahrasData">
+                    <td>{{fahras.id}}</td>
+                    <td><a [routerLink]="['/sura',fahras.id ]"
+                      routerLinkActive="router-link-active">{{fahras.name}}</a></td>
+                    <td>{{fahras.type}}</td>
+                    <td>{{fahras.ayahsNum}}</td>
+                    <td>{{fahras.page}}</td>
+                  </tr>
+                </tbody>
+              </table>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+

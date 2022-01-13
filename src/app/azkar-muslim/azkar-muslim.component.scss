@@ -1,0 +1,33 @@
+.container-fluid{
+    background:#030726;height:100%;
+    div{
+        strong{
+            font-size:25px;color:#FFD347;
+        }
+    }
+    .col-md-6{
+        .card{ height: 100%;
+            div:first-of-type{
+                background-size:contain;background-repeat:no-repeat;
+                    width:180px;height:200px;position:relative;
+                span{
+                    position:absolute;right:50px;top:22px;font-family: 'DS-Digital', sans-serif;
+                    font-size:3rem;
+                }
+                button:first-of-type{
+                    position:absolute;right:51px;top:103px;background:transparent;
+                    width:20px;height:20px;border-radius:50%;border:none;
+                }
+                button:nth-of-type(2){
+                    position:absolute;right:70px;top:120px;background:transparent;
+                    width:65px;height:65px;border-radius:50%;border:none;
+                }
+            }
+        }
+        p:nth-of-type(1){
+            font-size:24px;font-weight:bold;color:#030726;
+        }
+        p:nth-of-type(2){color:#444;font-size:16px;margin: 5px 0px;}
+        p{margin:0px 20px;text-align:center;}
+    }
+}

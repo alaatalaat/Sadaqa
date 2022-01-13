@@ -1,0 +1,27 @@
+#sectionTwo{
+  .row{
+
+      >div{
+          div:first-of-type{
+              background-image:url('../../assets/app-1407.png');background-size:contain;
+              background-repeat:no-repeat;height:100px;margin: auto;align-items:center;
+              justify-content:center;display:flex;flex-direction:column;font-size:22px;
+              font-weight:bold;color:#0D0551;
+          }
+          div:nth-child(3){
+              padding-right: calc(var(--bs-gutter-x) * 0.3);
+padding-left: calc(var(--bs-gutter-x) * 0.3);
+          }
+          span{
+              line-height: 35px;
+          }
+          span.number{
+              color:#009949;font-size:18px;
+          }
+          border: 10px solid transparent;
+          border-image: url('../../assets/border2.jpg') 15 round;
+      }
+  }
+}
+
+

@@ -1,0 +1,17 @@
+<div class="container my-5" id="sectionTwo" #soura>
+  <div class="row mx-1">
+      <div class="col-sm-12 col-md-9 mx-auto px-0">
+          <div>
+              {{allPageData?.data?.name}}
+          </div>
+          <div class="text-center">
+              <img src="../../assets/basmalah.png" height="60px">
+          </div>
+          <div>
+              <span *ngFor="let data of allPageData?.data?.ayahs ; let i = index">
+                  {{ data?.text }} <span class="number">({{data?.numberInSurah}})</span>
+              </span>
+          </div>
+      </div>
+  </div>
+</div>

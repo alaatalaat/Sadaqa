@@ -1,0 +1,22 @@
+#sectionOne{
+    background: #030726;
+    div:nth-child(1){
+        h1{color:#FFD347;}
+    }
+    .container{
+        .row{
+            a{
+                
+                div{
+                    height: 150px;position:relative;
+                    background-size:cover;background-repeat:no-repeat;
+                    span{
+                        position:absolute;bottom:0px;background:#747E4A;color:#fff;
+                        border-bottom-right-radius:5px;border-bottom-left-radius:5px;font-size:13px;
+                    }
+                   
+                }
+            }
+        }
+    }
+}

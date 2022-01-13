@@ -1,0 +1,26 @@
+#sectionOne{
+    background:#C3C4C5;
+    height:100vh;
+    display:flex;justify-content:center;align-items:center;
+    // margin:calc(70vh - 400px) auto;
+    div{
+        width:300px;height:400px;
+        div{
+            background-image:url('../../assets/1.png');position:relative;
+            background-size:contain;background-repeat:no-repeat;
+            span{
+                position:absolute;right:50px;top:65px;font-family: 'DS-Digital', sans-serif;
+                font-size:4rem;
+            }
+            button:first-of-type{
+                position:absolute;right:60px;top:200px;
+                width:30px;height:30px;border-radius:50%;background:transparent;border:none;
+            }
+            button:nth-of-type(2){
+                position:absolute;right:100px;top:240px;
+                width:100px;height:100px;border-radius:50%;background:transparent;border:none;
+            }
+        }
+    }
+    
+}

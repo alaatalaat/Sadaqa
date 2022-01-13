@@ -1,0 +1,28 @@
+#sectionOne{
+    background:#030726;
+    .row:nth-child(2){
+        div{
+            b{font-size:22px;color:#FFD347}
+            p{
+                span{color:#FFD347}
+            }
+        }
+    }
+}
+
+.container{
+    .row{
+        div{
+            .table > :not(:first-child) {
+                border-top: none;
+            }
+            table{
+                th,td{border: 1px solid #eee;}
+                td{
+                    a{text-decoration:none;}
+                }
+            }
+        }
+    }
+}
+

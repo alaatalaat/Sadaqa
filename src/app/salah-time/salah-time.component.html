@@ -1,0 +1,45 @@
+<div class="container-fluid">
+    <div class="text-center pt-5">
+        <b> أوقات الأذان في {{country}} <img :src="{{background}}" width="40px" height="40px" class="m-1 rounded"> </b>
+    </div>
+    <div class="container mt-4">
+        <div class="row">
+            <div class="col-sm-12 col-md-7 mx-auto">
+                <table class="table table-bordered text-white">
+                    <thead>
+                      <tr>
+                        <th scope="col">الأذان</th>
+                        <th scope="col">الوقت</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>موعد اذان الفجر</td>
+                        <td>{{allSalahTimes.data.timings?.Fajr}}</td>
+                      </tr>
+                      <tr>
+                        <td>وقت الشروق</td>
+                        <td>{{allSalahTimes.data.timings?.Sunrise}}</td>
+                      </tr>
+                      <tr>
+                          <td>موعد اذان الظهر</td>
+                          <td>{{allSalahTimes.data.timings?.Dhuhr}}</td>
+                      </tr>
+                      <tr>
+                          <td>موعد اذان العصر</td>
+                          <td>{{allSalahTimes.data.timings?.Asr}}</td>
+                      </tr>
+                      <tr>
+                          <td>موعد اذان المغرب</td>
+                          <td>{{allSalahTimes.data.timings?.Maghrib}}</td>
+                      </tr>
+                      <tr>
+                          <td>موعد اذان العشاء</td>
+                          <td>{{allSalahTimes.data.timings?.Isha}}</td>
+                      </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
